@@ -20,9 +20,11 @@ def performMath():
     if equation == 'parar':
         run= False
     else:
-        equation = re.sub('[a-zA-Z,.:() + " "]','',equation)
+        equation = re.sub('[a-zA-Z,.:()" "]','',equation)
         #a variável terá apenas valores que excluam os caracteres entre os colchetes
-        prev = equation
+        #assim, previne-se algum erro que possa surgir pelo uso da built in eval
+        prev = eval(equation)
+        #evaluate permite que o programa execute um código python "dentro de si"
         print("Você digitou:", prev)
 
 
