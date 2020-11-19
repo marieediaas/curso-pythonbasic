@@ -37,14 +37,14 @@ class Doguinhos:
         print("O doguinho está comendo...")
 
     def Infos(self):
-        print(f"\n{self.nome}\n{self.peso}\n{self.altura}\n{self.raca}")
+        print(f"\n{self.nome}\n{self.peso} Kg\n{self.altura} cm\n{self.raca}")
 
     def Late(self):
         print("AU, AU, AU!")
 
-doguinho1 = Doguinhos("Ted","27 Kg","60 cm","Boxer")
-doguinho2 = Doguinhos("Entropia","4 Kg","20 cm","Maltês")
-doguinho3 = Doguinhos("Pluft","5 Kg","36 cm","Pinscher")
+doguinho1 = Doguinhos("Ted",27,60,"Boxer")
+doguinho2 = Doguinhos("Entropia",4,20,"Maltês")
+doguinho3 = Doguinhos("Pluft",5,36,"Pinscher")
 
 doguinho1.Infos()
 doguinho1.Anda()
