@@ -1,18 +1,24 @@
 import random
 
 class Enemy:
+    hp = 200
     def __init__(self, atkl, atkh):
         self.atk_low = atkl
         self.atk_high = atkh
 
     def getAtack(self):
-        print(self.atk_low)
+        print("Atack is ", self.atk_low)
+
+    def getHP(self):
+        print("Hp is ", self.hp)
 
 enemy1 = Enemy(40,49)
 enemy1.getAtack()
-
+enemy1.getHP()
+print("")
 enemy2 = Enemy(75,90)
 enemy2.getAtack()
+enemy2.getHP()
 
 
 '''
