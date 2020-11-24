@@ -23,3 +23,6 @@ pyladies_mt.apres_as_infos()
 
 #Além disso, só conseguimos visualizar os atributos porque pedimos isso dentro da classe
 #com a função apres_as_infos. Se pedíssemos fora, não daria certo
+#O encapsulamento de atributos e métodos evitam o vazamento do seu escopo
+#A leitura e alteração de um atributo encapsulado podem ser feitas através de getters (função get()) e setters (função set())
+#Parei no 14:05
