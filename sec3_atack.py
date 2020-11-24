@@ -11,7 +11,11 @@ while player_hp > 0:
 
     if player_hp <= 30:
         player_hp= 30
-        print("You have low health, so you teleported to the nearest safe place.")
-        break
 
     print("Enemy strikes for ", damage, "points of damage. Current HP is ", player_hp)
+
+    if player_hp == 30:
+        pass
+
+    print("You have low health, so you teleported to the nearest safe place.")
+    break
