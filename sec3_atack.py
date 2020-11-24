@@ -1,6 +1,17 @@
 import random
 
+class Enemy:
+    atk_low = 60
+    atk_high = 80
 
+    def getAtack(self):
+        print(self.atk_low)
+
+enemy1 = Enemy()
+enemy1.getAtack()
+
+
+'''
 player_hp = 260
 enem_atk_low = 60
 enem_atk_high = 80
@@ -17,8 +28,6 @@ while player_hp > 0:
     if player_hp > 30:
         continue
 
-    #o continue ignora o que vem dps desse if e continua o while desde o começo, até que player_hp seja menor
-    #ou igual a 30 e ele não entre mais nesse último if
-    
     print("You have low health, so you teleported to the nearest safe place.")
     break
+'''
