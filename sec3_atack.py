@@ -14,8 +14,11 @@ while player_hp > 0:
 
     print("Enemy strikes for ", damage, "points of damage. Current HP is ", player_hp)
 
-    if player_hp == 30:
-        pass
+    if player_hp > 30:
+        continue
 
+    #o continue ignora o que vem dps desse if e continua o while desde o começo, até que player_hp seja menor
+    #ou igual a 30 e ele não entre mais nesse último if
+    
     print("You have low health, so you teleported to the nearest safe place.")
     break
