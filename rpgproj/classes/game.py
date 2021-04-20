@@ -59,11 +59,11 @@ class Person:
         self.mp -= cost
 
     #escolhendo o spell
-    def get_spell_name(self,i):
+    def get_magic_name(self,i):
         return self.magic[i]["name"]
 
     #custo do spell escolhido
-    def get_spell_cost(self,i):
+    def get_magic_cost(self,i):
         return self.magic[i]["cost"]
 
    #escolhe a ação
@@ -75,9 +75,9 @@ class Person:
             i += 1
 
     #escolhe a magiats
-    def choose_spell(self):
+    def choose_magic(self):
         i = 1
         print("Magic")
         for spell in self.magic:
-            print(str(i) + ":", spell["name"], "(cost:",str(spell["mp"]) + ")")
+            print(str(i) + ":", spell["name"], "(cost:",str(spell["cost"]) + ")")
             i += 1
