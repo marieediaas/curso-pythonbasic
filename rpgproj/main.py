@@ -11,5 +11,8 @@ enemy = Person(1200, 65, 45, 25, magic)
 
 running = True
 i = 1
+
+#a implementação de cor no texto é encerrada com bcolors.ENDC
 print(bcolors.FAIL + bcolors.BOLD + "AN ENEMY ATTACKS !" + bcolors.ENDC)
+print("This is normal text")
 
