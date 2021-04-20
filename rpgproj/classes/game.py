@@ -74,7 +74,7 @@ class Person:
             print(str(i) + ":", item)
             i += 1
 
-    #escolhe a magia
+    #escolhe a magiats
     def choose_spell(self):
         i = 1
         print("Magic")
