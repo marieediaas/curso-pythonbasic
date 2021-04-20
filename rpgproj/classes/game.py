@@ -22,6 +22,62 @@ class Person:
         self.magic = magic
         self.actions = ["Attack","Magic"]
 
+    #dano de ataque
     def gen_damage(self):
         return random.randrange(self.atkl, self.atkh)
-    
+
+    #dano de mage
+    def gen_magic_damage(self,i):
+        mgl = self.magic[i]["dmg"] - 5
+        mgh = self.magic[i]["dmg"] + 5
+        return random.randrange(mgl,mgh)
+
+    #dano no inimo
+    def take_dmg(self, dmg):
+        self.hp -= dmg
+
+        #checando se a pessoa está viva
+        if self.hp < 0:
+            self.hp = 0
+        return self.hp
+
+    #checar hp
+    def get_hp(self):
+        return self.hp
+
+    def get_max_hp(self):
+        return self.maxhp
+
+    def get_mp(self):
+        return self.mp
+
+    def get_max_mp(self):
+        return self.maxmp
+
+    #custo das magias
+    def reduce_mp(self,cost):
+        self.mp -= cost
+
+    #escolhendo o spell
+    def get_spell_name(self,i):
+        return self.magic[i]["name"]
+
+    #custo do spell escolhido
+    def get_spell_cost(self,i):
+        return self.magic[i]["cost"]
+
+   #escolhe a ação
+    def choose_action(self):
+        i = 1
+        print("Actions")
+        for item in self.actions:
+            print(str(i) + ":", item)
+            i += 1
+
+    #escolhe a magia
+    def choose_spell(self):
+        i = 1
+        print("Magic")
+        for spell in self.magic:
+            print(str(i) + ":", spell["name"], "(cost:",str(spell["mp"]) + ")")
+            i += 1
